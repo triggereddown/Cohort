@@ -147,7 +147,7 @@ section {
 }
 
 .love {
-  color: red;
+  color: yellow;
 }
 .right > div h4 {
   pointer-events: none;
@@ -176,4 +176,56 @@ section {
 }
 .mute:active {
   scale: 0.95;
+}
+
+.bottom .user button {
+  border-color: #f5c400;
+  color: #f5c400;
+}
+
+.bottom .user h4:hover {
+  color: #f5c400;
+  transition: 0.3s ease;
+}
+
+.bottom > h3 {
+  color: #f5c400;
+}
+
+.right i {
+  color: #f5c400;
+  transition: 0.3s ease;
+}
+
+.right i:hover {
+  color: #ffe066;
+  transform: scale(1.1);
+}
+
+.love {
+  color: yellow !important;
+}
+
+.mute {
+  background-color: #f5c400;
+  color: black;
+  box-shadow: 0 0 10px #f5c400aa;
+}
+
+.mute:hover {
+  background-color: #ffd739;
+}
+
+section {
+  border: 1px solid #f5c40033;
+}
+
+main {
+  background: linear-gradient(
+    to right bottom,
+    rgb(26, 26, 26),
+    rgb(30, 30, 30),
+    black,
+    #1a1a00
+  );
 }

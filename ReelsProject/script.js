@@ -187,6 +187,17 @@ allReels.addEventListener("click", function (dets) {
   // reels[dets.target.id].isLiked = true;
   // addData();
 
+  //6. to toggle like and unlike on click
+  // if (!reels[dets.target.id].isLiked == true) {
+  //   reels[dets.target.id].likeCount++;
+  //   reels[dets.target.id].isLiked = true;
+  //   addData();
+  // } else {
+  //   reels[dets.target.id].likeCount--;
+  //   reels[dets.target.id].isLiked = false;
+  //   addData();
+  // }
+
   if (!reels[dets.target.id].isLiked == true) {
     reels[dets.target.id].likeCount++;
     reels[dets.target.id].isLiked = true;
