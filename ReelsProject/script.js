@@ -178,5 +178,16 @@ allReels.addEventListener("click", function (dets) {
   // 3. this will increment the like count of clicked reel and log it in console
   // console.log(reels[dets.target.id].likeCount++);
 
-  console.log(reels[dets.target.id].likeCount++);
+  // 4. this will update the like count of clicked reel and re-render the reels
+  // reels[dets.target.id].likeCount++;
+  // addData();
+
+  //5. to change the like color when clicked
+  // reels[dets.target.id].likeCount++;
+  // reels[dets.target.id].isLiked = true;
+  // addData();
+
+  reels[dets.target.id].likeCount++;
+  reels[dets.target.id].isLiked = true;
+  addData();
 });
