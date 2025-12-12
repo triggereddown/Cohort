@@ -123,11 +123,12 @@ const reels = [
 
 var allReels = document.querySelector(".all-reels");
 
-var sum = "";
-reels.forEach(function (elem, idx) {
-  sum =
-    sum +
-    `<div class="reel">
+function addData() {
+  var sum = "";
+  reels.forEach(function (elem, idx) {
+    sum =
+      sum +
+      `<div class="reel">
           <video autoplay loop muted src="${elem.video}"></video>
           <div class="bottom">
             <div class="user">
@@ -161,6 +162,21 @@ reels.forEach(function (elem, idx) {
             </div>
           </div>
         </div>`;
-});
+  });
 
-allReels.innerHTML = sum;
+  allReels.innerHTML = sum;
+}
+
+addData();
+allReels.addEventListener("click", function (dets) {
+  // 1. this will give us the clicked reel data in object form
+  // console.log(reels[dets.target.id]);
+
+  // 2. this will give us the clicked reel caption data inside the  object
+  // console.log(reels[dets.target.id].caption);
+
+  // 3. this will increment the like count of clicked reel and log it in console
+  // console.log(reels[dets.target.id].likeCount++);
+
+  console.log(reels[dets.target.id].likeCount++);
+});
