@@ -187,7 +187,13 @@ allReels.addEventListener("click", function (dets) {
   // reels[dets.target.id].isLiked = true;
   // addData();
 
-  reels[dets.target.id].likeCount++;
-  reels[dets.target.id].isLiked = true;
-  addData();
+  if (!reels[dets.target.id].isLiked == true) {
+    reels[dets.target.id].likeCount++;
+    reels[dets.target.id].isLiked = true;
+    addData();
+  } else {
+    reels[dets.target.id].likeCount--;
+    reels[dets.target.id].isLiked = false;
+    addData();
+  }
 });
