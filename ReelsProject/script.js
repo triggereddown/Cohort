@@ -121,8 +121,10 @@ const reels = [
   },
 ];
 
+var allReels = document.querySelector(".all-reels");
+
 var sum = "";
-reels.forEach(function (elem) {
+reels.forEach(function (elem, idx) {
   sum =
     sum +
     `<div class="reel">
@@ -138,7 +140,7 @@ reels.forEach(function (elem) {
             <h3>${elem.caption}</h3>
           </div>
           <div class="right">
-            <div class="like">
+            <div id=${idx} class="like">
               <h4 class="like-icon icon">${
                 elem.isLiked
                   ? '<i class="love ri-heart-3-fill"></i>'
@@ -160,7 +162,5 @@ reels.forEach(function (elem) {
           </div>
         </div>`;
 });
-
-var allReels = document.querySelector(".all-reels");
 
 allReels.innerHTML = sum;
