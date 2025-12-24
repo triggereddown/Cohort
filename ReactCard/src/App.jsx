@@ -126,7 +126,7 @@ const App = () => {
       <div className="min-h-screen flex items-center justify-center">
         {/* <Card user="Trigger" age="50" />
         <Card user="Puttan" age="40" /> */}
-        <div className="grid grid-cols-3  md:grid-cols-2 sm:grid-cols-2">
+        <div className="grid grid-cols-3 ">
           {users.map(function (elem) {
             return <Card users={elem} key={elem.id} />;
           })}
