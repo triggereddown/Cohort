@@ -18,9 +18,13 @@ A simple loading screen made using map,forEach,understanding the object and api 
 ### 📸 Screenshot
 <img width="800" height="472" alt="image" src="https://github.com/user-attachments/assets/dc422bc0-cabf-4002-a516-0116ff8be1c7" />
 
-
-
 ## 📌 Project 4 — React Card Design With Tailwind
-A simple loading screen made using map,forEach,understanding the object and api datas.
+A simple loading screen made using tailwind.
 ### 📸 Screenshot
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/6b5feb19-ee9a-45fe-9cac-ae46a97de103" />
+
+## 📌 Project 5 — React Card Design With Tailwind and props and map application
+A simple loading screen made using map understanding the object and api datas.
+### 📸 Screenshot
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/2d50a562-808f-4a44-8ad2-2e198ffc7c2a" />
+
