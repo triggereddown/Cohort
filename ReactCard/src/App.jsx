@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 import Card from "./components/Card/Card";
 import StateLearn from "./components/StateLearn/StateLearn";
+import MarksEdiLearn from "./components/MarksEditLearn/MarksEdiLearn";
 
 const App = () => {
   const users = [
@@ -134,6 +135,7 @@ const App = () => {
         </div>
       </div>
       <StateLearn />
+      <MarksEdiLearn />
     </div>
   );
 };
