@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 import Card from "./components/Card/Card";
+import StateLearn from "./components/StateLearn/StateLearn";
 
 const App = () => {
   const users = [
@@ -132,6 +133,7 @@ const App = () => {
           })}
         </div>
       </div>
+      <StateLearn />
     </div>
   );
 };
