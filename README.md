@@ -9,7 +9,7 @@ A simple loading screen made using **setInterval**, **setTimeout**, and **clearI
 <img width="600" height="453" alt="image" src="https://github.com/user-attachments/assets/0edf717a-e76f-4110-b427-196f9e201b6d" />
 
 ## 📌 Project 2 — Reels App
-A simple loading screen made using map,forEach,understanding the object and api datas.
+A simple screen made using map,forEach,understanding the object and api datas.
 ### 📸 Screenshot
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/1b00e2c6-52f8-416e-8bdd-927b9fc5de3b" />
 
@@ -19,12 +19,18 @@ A simple loading screen made using map,forEach,understanding the object and api 
 <img width="800" height="472" alt="image" src="https://github.com/user-attachments/assets/dc422bc0-cabf-4002-a516-0116ff8be1c7" />
 
 ## 📌 Project 4 — React Card Design With Tailwind
-A simple loading screen made using tailwind.
+A simple screen made using tailwind.
 ### 📸 Screenshot
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/6b5feb19-ee9a-45fe-9cac-ae46a97de103" />
 
 ## 📌 Project 5 — React Card Design With Tailwind and props and map application
-A simple loading screen made using map understanding the object and api datas.
+A simple screen made using map understanding the object and api datas.
 ### 📸 Screenshot
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/2d50a562-808f-4a44-8ad2-2e198ffc7c2a" />
+
+## 📌 Project 6 — React Card Design With Tailwind and props and map application
+A React-based card generator showcasing controlled forms, state management, and dynamic card rendering
+### 📸 Screenshot
+<img width="500" height="856" alt="image_2025-12-27_22-50-10" src="https://github.com/user-attachments/assets/7d812ce4-cffa-41bf-931a-488c72c3a74a" />
+
 
