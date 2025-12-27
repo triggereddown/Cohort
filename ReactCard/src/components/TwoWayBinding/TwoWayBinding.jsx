@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const TwoWayBinding = () => {
   const onSubmitHandler = (e) => {
@@ -6,6 +6,8 @@ const TwoWayBinding = () => {
     e.preventDefault();
     console.log("Form submitter");
   };
+
+  const [username, setUsername] = useState("");
 
   return (
     <div>
@@ -20,12 +22,14 @@ const TwoWayBinding = () => {
         action=""
       >
         <input
-          onChange={(e) => {
-            console.log(e.target.value);
-          }}
           className="border border-amber-900 p-4"
           type="text"
           placeholder="Enter your text"
+          value={username}
+          onChange={(e) => {
+            setUsername(e.target.value);
+            console.log(e.target.value);
+          }}
         />
         <button className="p-2 bg-black text-amber-50 ">Submit</button>
       </form>
