@@ -20,6 +20,9 @@ const TwoWayBinding = () => {
         action=""
       >
         <input
+          onChange={(e) => {
+            console.log(e.target.value);
+          }}
           className="border border-amber-900 p-4"
           type="text"
           placeholder="Enter your text"
