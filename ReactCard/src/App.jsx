@@ -4,6 +4,7 @@ import Profile from "./components/Profile/Profile";
 import Card from "./components/Card/Card";
 import StateLearn from "./components/StateLearn/StateLearn";
 import MarksEdiLearn from "./components/MarksEditLearn/MarksEdiLearn";
+import TwoWayBinding from "./components/TwoWayBinding/TwoWayBinding";
 
 const App = () => {
   const users = [
@@ -122,7 +123,7 @@ const App = () => {
   return (
     <div className="text-red-500">
       App
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Profile /> */}
       {/* Rendering 2 components of same type  */}
       <div className="min-h-screen flex items-center justify-center">
@@ -136,6 +137,7 @@ const App = () => {
       </div>
       <StateLearn />
       <MarksEdiLearn />
+      <TwoWayBinding />
     </div>
   );
 };
