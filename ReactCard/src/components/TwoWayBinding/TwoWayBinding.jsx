@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 
 const TwoWayBinding = () => {
+  const [username, setUsername] = useState("");
+  //Below is an example of usestate with blank array
+  const [userList, setUserList] = useState([]);
+
   const onSubmitHandler = (e) => {
     //3---Receiving the input inside the handler function and stopping its default nature
     e.preventDefault();
-    console.log("Form submitter");
+    console.log("Form submitted");
+    const oldList = [...userList];
+    oldList.push(username);
+    setUserList(oldList);
+    console.log(userList);
+    // After submitting the form, clearing the input field
+    setUsername(" ");
   };
-
-  const [username, setUsername] = useState("");
-
   return (
     <div>
       <form
@@ -28,11 +35,20 @@ const TwoWayBinding = () => {
           value={username}
           onChange={(e) => {
             setUsername(e.target.value);
-            console.log(e.target.value);
+            // console.log(e.target.value);
           }}
         />
         <button className="p-2 bg-black text-amber-50 ">Submit</button>
       </form>
+      <div className="listPrint">
+        {userList.map((elem, idx) => {
+          return (
+            <h1>
+              No.{idx + 1} is {elem}
+            </h1>
+          );
+        })}
+      </div>
     </div>
   );
 };

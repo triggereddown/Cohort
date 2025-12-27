@@ -5,6 +5,7 @@ import Card from "./components/Card/Card";
 import StateLearn from "./components/StateLearn/StateLearn";
 import MarksEdiLearn from "./components/MarksEditLearn/MarksEdiLearn";
 import TwoWayBinding from "./components/TwoWayBinding/TwoWayBinding";
+import ContactGeneratorProjectClassSix from "./components/ContactGeneratorProjectClassSix/ContactGeneratorProjectClassSix";
 
 const App = () => {
   const users = [
@@ -121,23 +122,24 @@ const App = () => {
   ];
 
   return (
-    <div className="text-red-500">
+    <div className="text-red-500 bg-gray-950">
       App
       {/* <Navbar /> */}
       {/* <Profile /> */}
       {/* Rendering 2 components of same type  */}
-      <div className="min-h-screen flex items-center justify-center">
+      {/* <div className="min-h-screen flex items-center justify-center">
         {/* <Card user="Trigger" age="50" />
         <Card user="Puttan" age="40" /> */}
-        <div className="grid grid-cols-3 ">
+      {/* <div className="grid grid-cols-3 ">
           {users.map(function (elem) {
             return <Card users={elem} key={elem.id} />;
           })}
         </div>
-      </div>
-      <StateLearn />
-      <MarksEdiLearn />
-      <TwoWayBinding />
+      </div> */}
+      {/* <StateLearn />
+      <MarksEdiLearn /> */}
+      {/* <TwoWayBinding /> */}
+      <ContactGeneratorProjectClassSix />
     </div>
   );
 };
