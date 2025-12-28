@@ -16,11 +16,19 @@ const ContactGeneratorProjectClassSix = () => {
     setPhoneNumber("");
   };
 
+  const deleteHandler = (idx) => {
+    const copyCardList = [...cardList];
+    copyCardList.splice(idx, 1);
+    setCardList(copyCardList);
+    // const updatedCardList = cardList.filter((_, index) => index !== idx);
+    // setCardList(updatedCardList);
+  };
+
   return (
     <div className="min-h-screen flex justify-center items-center bg-zinc-950">
       <div
         className="mainBody bg-zinc-900 text-zinc-100 font-bold text-4xl 
-                      w-[400px] p-6 rounded-xl flex flex-col gap-6 
+                      w-[480px] p-6 rounded-xl flex flex-col gap-6 
                       border border-zinc-800 shadow-lg"
       >
         <div className="text-center tracking-wide text-zinc-200">
@@ -63,7 +71,7 @@ const ContactGeneratorProjectClassSix = () => {
             />
 
             <button
-              className="text-xl border border-indigo-500 p-2 rounded-md 
+              className="text-xl border border-indigo-500 p-2 rounded-md ml-4 
                          bg-indigo-600 hover:bg-indigo-500 
                          transition-colors duration-200"
             >
@@ -77,14 +85,26 @@ const ContactGeneratorProjectClassSix = () => {
                 key={idx}
                 className="div flex flex-col gap-3 border border-zinc-700 
                            rounded-lg p-3 text-center bg-zinc-800 
-                           hover:border-indigo-500 transition-colors"
+                           hover:border-indigo-500 transition-colors  w-fit"
               >
                 <h1 className="text-xs uppercase tracking-widest text-zinc-400">
                   Fighter No. {idx + 1}
                 </h1>
-                <h2 className="text-2xl text-zinc-100">{elem.username}</h2>
-                <h2 className="text-lg text-zinc-300">{elem.phoneNumber}</h2>
-                <h2 className="text-sm text-zinc-400">{elem.email}</h2>
+                <h2 className="text-2xl text-zinc-100">
+                  Name--{elem.username}
+                </h2>
+                <h2 className="text-lg text-zinc-300">
+                  Phone--{elem.phoneNumber}
+                </h2>
+                <h2 className="text-sm text-zinc-400">Email--{elem.email}</h2>
+                <button
+                  onClick={() => {
+                    deleteHandler(idx);
+                  }}
+                  className="bg-red-600 text-white p-2 rounded-md font-medium text-sm"
+                >
+                  Remove
+                </button>
               </div>
             ))}
           </div>

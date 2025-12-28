@@ -6,6 +6,7 @@ import StateLearn from "./components/StateLearn/StateLearn";
 import MarksEdiLearn from "./components/MarksEditLearn/MarksEdiLearn";
 import TwoWayBinding from "./components/TwoWayBinding/TwoWayBinding";
 import ContactGeneratorProjectClassSix from "./components/ContactGeneratorProjectClassSix/ContactGeneratorProjectClassSix";
+import TodoCrdProject from "./components/TodoCardProject/TodoCrdProject";
 
 const App = () => {
   const users = [
@@ -140,6 +141,7 @@ const App = () => {
       <MarksEdiLearn /> */}
       {/* <TwoWayBinding /> */}
       <ContactGeneratorProjectClassSix />
+      <TodoCrdProject />
     </div>
   );
 };
