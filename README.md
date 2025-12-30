@@ -29,8 +29,9 @@ A simple screen made using map understanding the object and api datas.
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/2d50a562-808f-4a44-8ad2-2e198ffc7c2a" />
 
 ## 📌 Project 6 — React Card Design With Tailwind and props and map application
-A React-based card generator showcasing controlled forms, state management, and dynamic card rendering
+A React-based card generator showcasing controlled forms, state management, and dynamic card rendering,localStorage
 ### 📸 Screenshot
-<img width="500" height="856" alt="image_2025-12-27_22-50-10" src="https://github.com/user-attachments/assets/7d812ce4-cffa-41bf-931a-488c72c3a74a" />
+<img width="362" height="677" alt="image" src="https://github.com/user-attachments/assets/eef82e6a-ec89-49dd-9ef8-2a45926e7f63" />
+
 
 
