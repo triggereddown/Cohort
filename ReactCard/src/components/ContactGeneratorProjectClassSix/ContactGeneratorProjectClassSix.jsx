@@ -4,6 +4,7 @@ const ContactGeneratorProjectClassSix = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [image, setImage] = useState("");
 
   const localData = JSON.parse(localStorage.getItem("all-users")) || [];
   //console.log(JSON.parse(localData));
@@ -12,12 +13,13 @@ const ContactGeneratorProjectClassSix = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     const newCard = [...cardList];
-    newCard.push({ username, email, phoneNumber });
+    newCard.push({ username, image, email, phoneNumber });
     setCardList(newCard);
     localStorage.setItem("all-users", JSON.stringify(newCard));
     setUsername("");
     setEmail("");
     setPhoneNumber("");
+    setImage("");
   };
 
   const deleteHandler = (idx) => {
@@ -53,7 +55,16 @@ const ContactGeneratorProjectClassSix = () => {
               type="text"
               placeholder="Enter UserName"
             />
-
+            <input
+              value={image}
+              onChange={(e) => setImage(e.target.value)}
+              className="border border-zinc-700 bg-zinc-800 text-zinc-100 
+                         rounded-md my-2 p-2 text-2xl 
+                         placeholder-zinc-400 focus:outline-none 
+                         focus:border-indigo-500"
+              type="text"
+              placeholder="Enter Image Link"
+            />
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -99,6 +110,11 @@ const ContactGeneratorProjectClassSix = () => {
                 <h2 className="text-2xl text-zinc-100">
                   Name--{elem.username}
                 </h2>
+                <img
+                  className="rounded-md w-30 mx-auto"
+                  src={elem.image}
+                  alt={elem.username}
+                />
                 <h2 className="text-lg text-zinc-300">
                   Phone--{elem.phoneNumber}
                 </h2>
