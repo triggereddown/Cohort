@@ -6,6 +6,7 @@ const ContactGeneratorProjectClassSix = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [cardList, setCardList] = useState([]);
 
+  const localData = localStorage.getItem("all-users");
   const onSubmitHandler = (e) => {
     e.preventDefault();
     const newCard = [...cardList];
