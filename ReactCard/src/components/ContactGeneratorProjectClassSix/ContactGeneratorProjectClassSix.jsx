@@ -4,14 +4,17 @@ const ContactGeneratorProjectClassSix = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [cardList, setCardList] = useState([]);
 
-  const localData = localStorage.getItem("all-users");
+  const localData = JSON.parse(localStorage.getItem("all-users")) || [];
+  //console.log(JSON.parse(localData));
+  const [cardList, setCardList] = useState(localData);
+
   const onSubmitHandler = (e) => {
     e.preventDefault();
     const newCard = [...cardList];
     newCard.push({ username, email, phoneNumber });
     setCardList(newCard);
+    localStorage.setItem("all-users", JSON.stringify(newCard));
     setUsername("");
     setEmail("");
     setPhoneNumber("");
@@ -19,10 +22,12 @@ const ContactGeneratorProjectClassSix = () => {
 
   const deleteHandler = (idx) => {
     const copyCardList = [...cardList];
+    //splice(start index,uptill howe many elements after the start index)
     copyCardList.splice(idx, 1);
     setCardList(copyCardList);
     // const updatedCardList = cardList.filter((_, index) => index !== idx);
     // setCardList(updatedCardList);
+    localStorage.setItem("all-users", JSON.stringify(copyCardList));
   };
 
   return (
