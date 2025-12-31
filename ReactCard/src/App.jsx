@@ -7,6 +7,7 @@ import MarksEdiLearn from "./components/MarksEditLearn/MarksEdiLearn";
 import TwoWayBinding from "./components/TwoWayBinding/TwoWayBinding";
 import ContactGeneratorProjectClassSix from "./components/ContactGeneratorProjectClassSix/ContactGeneratorProjectClassSix";
 import TodoCrdProject from "./components/TodoCardProject/TodoCrdProject";
+import AxiosLearn from "./components/AxiosLearn/AxiosLearn";
 
 const App = () => {
   const users = [
@@ -141,7 +142,8 @@ const App = () => {
       <MarksEdiLearn /> */}
       {/* <TwoWayBinding /> */}
       <ContactGeneratorProjectClassSix />
-      <TodoCrdProject />
+      {/* <TodoCrdProject /> */}
+      <AxiosLearn />
     </div>
   );
 };
