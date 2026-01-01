@@ -3,6 +3,13 @@ import axios from "axios";
 import AxiosUserCard from "../AxiosUserCard/AxiosUserCard";
 
 const AxiosLearn = () => {
+  const [title, setTitle] = useState([]);
+
+  //use effect jiska kaam hai jab bhi title change ho to console me ek baar print kar de
+  useEffect(() => {
+    console.log("usefeect");
+  }, [title]);
+
   const [cardData, setCardData] = useState([]);
   const fetchedData = async function () {
     const response = await axios.get(
@@ -11,6 +18,7 @@ const AxiosLearn = () => {
     setCardData(response.data);
   };
 
+  //use effect lagaya taaki jab bhi website load ho to data render kar de
   useEffect(() => {
     fetchedData();
   }, []);
@@ -44,6 +52,19 @@ const AxiosLearn = () => {
 
           // <h1 key={idx}>{elem.title}</h1>;
         })}
+      </div>
+
+      <div>
+        <input
+          className="border-2 border-gray-300 p-2 rounded-md w-1/2 mx-auto block"
+          value={title}
+          type="text"
+          placeholder="type title"
+          onChange={(e) => {
+            setTitle(e.target.value);
+          }}
+        />
+        <h1>{title}</h1>
       </div>
     </div>
   );
