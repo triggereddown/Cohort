@@ -33,5 +33,11 @@ A React-based card generator showcasing controlled forms, state management, and 
 ### 📸 Screenshot
 <img width="362" height="677" alt="image" src="https://github.com/user-attachments/assets/eef82e6a-ec89-49dd-9ef8-2a45926e7f63" />
 
+## 📌 Project 7 — React Data fetching with the help of axios
+A React-based data fetching component showcasing reusable components,propdrilling,api destructuring 
+### 📸 Screenshot
+<img width="1700" height="1197" alt="image" src="https://github.com/user-attachments/assets/9ba30e4f-38a2-41c0-9b7e-d388a619a328" />
+
+
 
 
