@@ -3,12 +3,35 @@ import axios from "axios";
 import AxiosUserCard from "../AxiosUserCard/AxiosUserCard";
 
 const AxiosLearn = () => {
+  //Pokemon card api test with useEffect
+  const [randomUser, setRandomUser] = useState("");
+  const [counter, setCounter] = useState(0);
+
+  const getUserData = async () => {
+    const response1 = await axios.get("https://randomuser.me/api/");
+
+    console.log(
+      response1.data.results[0].name.first +
+        " " +
+        response1.data.results[0].name.last
+    );
+    setRandomUser(
+      response1.data.results[0].name.first +
+        " " +
+        response1.data.results[0].name.last
+    );
+  };
+
+  useEffect(() => {
+    getUserData();
+  }, [counter]);
+
   const [title, setTitle] = useState([]);
 
   //use effect jiska kaam hai jab bhi title change ho to console me ek baar print kar de
-  useEffect(() => {
-    console.log("usefeect");
-  }, [title]);
+  // useEffect(() => {
+  //   console.log("usefeect");
+  // }, [title]);
 
   const [cardData, setCardData] = useState([]);
   const fetchedData = async function () {
@@ -64,7 +87,31 @@ const AxiosLearn = () => {
             setTitle(e.target.value);
           }}
         />
-        <h1>{title}</h1>
+        <h1 className="text-center py-2">{title}</h1>
+      </div>
+
+      {/* useffect project */}
+      <div className="pt-4">
+        <div className="flex justify-center">
+          <button
+            onClick={() => {
+              setCounter(counter + 1);
+            }}
+            className="p-2 bg-green-500 text-white rounded-md font-bold"
+          >
+            Get Random User
+          </button>
+        </div>
+        <div>
+          <h1 className="text-xl text-center text-amber-700 font-bold">
+            {counter}
+          </h1>
+        </div>
+        <div>
+          <h1 className="text-2xl text-center text-amber-500 font-bold">
+            {randomUser}
+          </h1>
+        </div>
       </div>
     </div>
   );
