@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import AxiosUserCard from "../AxiosUserCard/AxiosUserCard";
 
@@ -11,6 +11,10 @@ const AxiosLearn = () => {
     setCardData(response.data);
   };
 
+  useEffect(() => {
+    fetchedData();
+  }, []);
+
   const handleCardGenerate = () => {
     fetchedData();
   };
@@ -22,9 +26,9 @@ const AxiosLearn = () => {
       <div className="flex justify-center">
         <button
           className="p-2 bg-blue-500 text-white rounded-md font-bold "
-          onClick={() => {
-            handleCardGenerate();
-          }}
+          // onClick={() => {
+          //   handleCardGenerate();
+          // }}
         >
           Get Data
         </button>
