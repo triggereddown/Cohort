@@ -13,6 +13,7 @@ import About from "./pages/About/About";
 import { Routes, Route } from "react-router-dom";
 import Product from "./pages/Product/Product";
 import Men from "./pages/Men/Men";
+import AboutDynamic from "./pages/AboutDynamic/AboutDynamic";
 
 const App = () => {
   const users = [
@@ -135,7 +136,11 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Product />} />
+
+        {/* Nested Routes */}
         <Route path="/products/men" element={<Men />} />
+        {/* Dynamic Routes */}
+        <Route path="/about/:id" element={<AboutDynamic />} />
       </Routes>
       {/* <Navbar /> */}
       {/* <Profile /> */}
