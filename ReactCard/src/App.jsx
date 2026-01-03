@@ -128,7 +128,7 @@ const App = () => {
 
   return (
     <div className="text-white text-center font-bold bg-gray-950">
-      App
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
