@@ -8,6 +8,9 @@ import TwoWayBinding from "./components/TwoWayBinding/TwoWayBinding";
 import ContactGeneratorProjectClassSix from "./components/ContactGeneratorProjectClassSix/ContactGeneratorProjectClassSix";
 import TodoCrdProject from "./components/TodoCardProject/TodoCrdProject";
 import AxiosLearn from "./components/AxiosLearn/AxiosLearn";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   const users = [
@@ -124,8 +127,12 @@ const App = () => {
   ];
 
   return (
-    <div className="text-red-500 bg-gray-950">
+    <div className="text-white text-center font-bold bg-gray-950">
       App
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
       {/* <Navbar /> */}
       {/* <Profile /> */}
       {/* Rendering 2 components of same type  */}
