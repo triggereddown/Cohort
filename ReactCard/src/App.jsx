@@ -11,6 +11,8 @@ import AxiosLearn from "./components/AxiosLearn/AxiosLearn";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import { Routes, Route } from "react-router-dom";
+import Product from "./pages/Product/Product";
+import Men from "./pages/Men/Men";
 
 const App = () => {
   const users = [
@@ -132,6 +134,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Product />} />
+        <Route path="/products/men" element={<Men />} />
       </Routes>
       {/* <Navbar /> */}
       {/* <Profile /> */}
