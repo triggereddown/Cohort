@@ -42,9 +42,9 @@ const AxiosLearn = () => {
   };
 
   //use effect lagaya taaki jab bhi website load ho to data render kar de
-  useEffect(() => {
-    fetchedData();
-  }, []);
+  // useEffect(() => {
+  //   fetchedData();
+  // }, []);
 
   const handleCardGenerate = () => {
     fetchedData();
@@ -57,9 +57,9 @@ const AxiosLearn = () => {
       <div className="flex justify-center">
         <button
           className="p-2 bg-blue-500 text-white rounded-md font-bold "
-          // onClick={() => {
-          //   handleCardGenerate();
-          // }}
+          onClick={() => {
+            handleCardGenerate();
+          }}
         >
           Get Data
         </button>
@@ -78,6 +78,8 @@ const AxiosLearn = () => {
       </div>
 
       <div>
+        <h1 className="py-4">UseEffect Project to show what's typed</h1>
+
         <input
           className="border-2 border-gray-300 p-2 rounded-md w-1/2 mx-auto block"
           value={title}

@@ -14,6 +14,7 @@ import { Routes, Route } from "react-router-dom";
 import Product from "./pages/Product/Product";
 import Men from "./pages/Men/Men";
 import AboutDynamic from "./pages/AboutDynamic/AboutDynamic";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const users = [
@@ -160,6 +161,7 @@ const App = () => {
       <ContactGeneratorProjectClassSix />
       {/* <TodoCrdProject /> */}
       <AxiosLearn />
+      <Footer />
     </div>
   );
 };
