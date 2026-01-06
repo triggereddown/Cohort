@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 import Card from "./components/Card/Card";
@@ -15,6 +15,7 @@ import Product from "./pages/Product/Product";
 import Men from "./pages/Men/Men";
 import AboutDynamic from "./pages/AboutDynamic/AboutDynamic";
 import Footer from "./components/Footer/Footer";
+import Stepper from "./components/Stepper/Stepper";
 
 const App = () => {
   const users = [
@@ -130,6 +131,31 @@ const App = () => {
     },
   ];
 
+  const steps = [
+    {
+      step: 1,
+      label: "Account Setup",
+    },
+    {
+      step: 2,
+      label: "Personal Information",
+    },
+    {
+      step: 3,
+      label: "Email Verification",
+    },
+    {
+      step: 4,
+      label: "Confirmation",
+    },
+  ];
+
+  const [currentStep, setCurrentStep] = useState(1);
+  const handleStepperNext = () => {
+    if (currentStep < steps.length) setCurrentStep((prev) => prev + 1);
+    console.log(currentStep);
+  };
+
   return (
     <div className="text-white text-center font-bold bg-gray-950">
       <Navbar />
@@ -161,6 +187,17 @@ const App = () => {
       <ContactGeneratorProjectClassSix />
       {/* <TodoCrdProject /> */}
       <AxiosLearn />
+      <Stepper steps={steps} currentStep={currentStep} />
+      <div className="StepperButton">
+        <button
+          onClick={() => {
+            handleStepperNext();
+          }}
+          className=" p-2 bg-blue-600 border border-amber-50 rounded-md my-2"
+        >
+          Next
+        </button>
+      </div>
       <Footer />
     </div>
   );
