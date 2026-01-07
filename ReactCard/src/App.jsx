@@ -16,6 +16,7 @@ import Men from "./pages/Men/Men";
 import AboutDynamic from "./pages/AboutDynamic/AboutDynamic";
 import Footer from "./components/Footer/Footer";
 import Stepper from "./components/Stepper/Stepper";
+import ContextLearn from "./components/ContextLearn/ContextLearn";
 
 const App = () => {
   const users = [
@@ -157,8 +158,9 @@ const App = () => {
   };
 
   return (
-    <div className="text-white text-center font-bold bg-gray-950">
+    <div className="appDiv text-white text-center font-bold bg-gray-950">
       <Navbar />
+      <ContextLearn />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { UserDataContext } from "../../context/UserContext";
 
 const Footer = () => {
+  const contextData = useContext(UserDataContext);
   const navigate = useNavigate();
   return (
     <div>
       <div className="bg-red-900 p-4 flex justify-around">
         Footer Component
+        {/* <div>This is from the context data:{contextData}</div> */}
         <div
           className="cursor-pointer scroll-smooth"
           onClick={() => {
