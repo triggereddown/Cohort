@@ -46,6 +46,14 @@ A React-based data fetching component showcasing reusable components,propdrillin
 ### 📸 Screenshot
 <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/dc2c33d9-fde2-453e-b75e-02bb12e51f50" />
 
+## 📌 Project 9 — ContextPassing Component 
+### 📸 Screenshot
+A React-based data fetching component showcasing reusable components,with using context provider to reduce prop-drilling
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/04fd73ef-4b4e-4049-a92b-c9fa7ad2e2f9" />
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/ed7c933e-ba4c-487e-82cd-d4d94b43dfd1" />
+
+
+
 
 
 
