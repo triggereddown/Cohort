@@ -5,13 +5,16 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import UserContext from "./context/UserContext.jsx";
 import PostContext from "./context/PostContext.jsx";
+import ProductContext from "./context/ProductContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <PostContext>
-      <UserContext>
-        <App />
-      </UserContext>
-    </PostContext>
+    <ProductContext>
+      <PostContext>
+        <UserContext>
+          <App />
+        </UserContext>
+      </PostContext>
+    </ProductContext>
   </BrowserRouter>
 );

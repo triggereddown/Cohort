@@ -17,6 +17,8 @@ import AboutDynamic from "./pages/AboutDynamic/AboutDynamic";
 import Footer from "./components/Footer/Footer";
 import Stepper from "./components/Stepper/Stepper";
 import ContextLearn from "./components/ContextLearn/ContextLearn";
+import ApiContext from "./components/ApiContext/ApiContext";
+import ProductDetails from "./pages/ProductDetails.jsx/ProductDetails";
 
 const App = () => {
   const users = [
@@ -160,11 +162,12 @@ const App = () => {
   return (
     <div className="appDiv text-white text-center font-bold bg-gray-950">
       <Navbar />
-      <ContextLearn />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Product />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
 
         {/* Nested Routes */}
         <Route path="/products/men" element={<Men />} />
@@ -186,6 +189,8 @@ const App = () => {
       {/* <StateLearn />
       <MarksEdiLearn /> */}
       {/* <TwoWayBinding /> */}
+      <ContextLearn />
+      <ApiContext />
       <ContactGeneratorProjectClassSix />
       {/* <TodoCrdProject /> */}
       <AxiosLearn />
