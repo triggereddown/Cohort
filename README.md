@@ -38,6 +38,16 @@ A React-based data fetching component showcasing reusable components,propdrillin
 ### 📸 Screenshot
 <img width="1700" height="1197" alt="image" src="https://github.com/user-attachments/assets/9ba30e4f-38a2-41c0-9b7e-d388a619a328" />
 
+## 📌 Project 8 — React Data pass-on with the help of UseContext
+### 📸 Screenshot
+<img width="1200" height="701" alt="image" src="https://github.com/user-attachments/assets/d41937bf-0ab0-4b42-8344-25469b455b26" />
+
+## 📌 Project 8 — Stepper Component 
+### 📸 Screenshot
+<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/dc2c33d9-fde2-453e-b75e-02bb12e51f50" />
+
+
+
 
 
 
