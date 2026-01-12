@@ -1,17 +1,26 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { UserDataContext } from "../../context/UserContext";
 import { PostDataContext } from "../../context/PostContext";
 
 const ContextLearn = () => {
-  const data = useContext(UserDataContext);
   const postData = useContext(PostDataContext);
+  const [user, setUser] = useContext(UserDataContext);
 
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-4">
-        Lets learn context from {data}
+        Lets learn context from {user}
       </h1>
-
+      <div className="contextChangeButton py-2">
+        <button
+          onClick={() => {
+            setUser("LatestUser");
+          }}
+          className="bg-blue-800 rounded-md p-2 cursor-pointer"
+        >
+          Change Context???
+        </button>
+      </div>
       {/* GRID */}
       <div className="grid grid-cols-3 gap-6 bg-amber-800 p-6 rounded-lg">
         {postData.map((user, idx) => {
