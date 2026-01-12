@@ -14,7 +14,10 @@ const ContextLearn = () => {
       <div className="contextChangeButton py-2">
         <button
           onClick={() => {
-            setUser("LatestUser");
+            if (user === "LatestUser") setUser("Triggu");
+            else {
+              setUser("LatestUser");
+            }
           }}
           className="bg-blue-800 rounded-md p-2 cursor-pointer"
         >
