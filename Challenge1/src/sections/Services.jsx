@@ -8,7 +8,7 @@ import star from "../assets/star.webp";
 const Services = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 py-8 border border-gray-500 m-8 rounded-3xl">
-      <div className="mb-20">
+      <div className="mb-10">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <h1 className="text-5xl font-medium tracking-tight">Our Services</h1>
@@ -55,7 +55,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="py-2 text-center max-w-5xl mx-auto">
+      <div className=" text-center max-w-5xl mx-auto">
         <div className="uppercase text-xs text-gray-400 tracking-widest mb-6">
           — About Astratto
         </div>
