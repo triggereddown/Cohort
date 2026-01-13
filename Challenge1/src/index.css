@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-brand-purple: #8b5cf6; /* Adjust based on your image exact purple */
+  --color-brand-yellow: #fde047;
+}
+
+body {
+  font-family: var(--font-helvetica);
+  background-color: #ffffff;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
