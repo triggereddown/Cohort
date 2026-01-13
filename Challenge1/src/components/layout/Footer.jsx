@@ -40,7 +40,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-500">
           <div className="left">
-            <p>Via della Creatività, 23, 20121 Milano</p>
+            <p>Veni Vidi Vici, 25, I came I saw I conqured</p>
           </div>
 
           <div className="links flex gap-6">
