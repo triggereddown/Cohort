@@ -1,11 +1,13 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 
-const Button = ({ children }) => {
+const Button = ({ children, className = "" }) => {
   return (
-    <button className="flex rounded-full border p-2 gap-2 border-orange-600 font-medium">
+    <button
+      className={`flex items-center justify-center gap-2 px-6 py-3 bg-white border border-orange-500 rounded-full hover:shadow-lg  transition-all ${className}`}
+    >
       {children}
-      <ArrowUpRight className="pt-1 text-purple-600 font-bold" size={22} />
+      <ArrowUpRight className="text-brand-purple" size={28} />
     </button>
   );
 };
