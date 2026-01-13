@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "../components/cards/ProjectCard";
-// Using a placeholder image since I don't have your local files
+
 import placeholderImg1 from "../assets/img7.webp";
 import placeholderImg2 from "../assets/img4.webp";
 import placeholderImg3 from "../assets/img5.webp";
@@ -9,7 +9,6 @@ import placeholderImg4 from "../assets/img6.webp";
 const Projects = () => {
   return (
     <div className="projects max-w-7xl mx-auto px-6 py-20 ">
-      {/* HEADER SECTION */}
       <div className="top flex flex-col md:flex-row justify-between items-end mb-20">
         <div className="left">
           <h1 className="text-5xl font-medium tracking-tight">
@@ -25,9 +24,7 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* GRID SECTION */}
       <div className="bottom flex flex-col md:flex-row gap-8">
-        {/* LEFT COLUMN - Starts at the top */}
         <div className="left flex-1 flex flex-col gap-16 ">
           <ProjectCard
             title="The Lighthouse"
@@ -36,7 +33,6 @@ const Projects = () => {
             category="2D Animation"
           />
 
-          {/* You can add another card here later */}
           <ProjectCard
             title="Urban Oases"
             description="Redefining city landscapes with sustainable and modern architectural solutions."
@@ -45,8 +41,6 @@ const Projects = () => {
           />
         </div>
 
-        {/* RIGHT COLUMN - Starts lower (The Stagger Effect) */}
-        {/* 'md:mt-32' pushes this whole column down on desktop screens */}
         <div className="right flex-1 flex flex-col gap-16 md:mt-32 pl-10">
           <ProjectCard
             title="Snowscape Haven"

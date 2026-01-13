@@ -9,7 +9,6 @@ const Services = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 py-8 border border-gray-500 m-8 rounded-3xl">
       <div className="mb-10">
-        {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <h1 className="text-5xl font-medium tracking-tight">Our Services</h1>
           <p className="text-gray-500 max-w-sm text-right mt-4 md:mt-0">

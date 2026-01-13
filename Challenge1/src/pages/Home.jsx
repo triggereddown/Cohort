@@ -6,11 +6,13 @@ import Services from "../sections/Services";
 import Footer from "../components/layout/Footer";
 import ProjectCard from "../components/cards/ProjectCard";
 import Projects from "../sections/Projects";
+import Hero from "../sections/Hero";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
+      <Hero />
       <Projects />
       <Services />
       <Footer />
