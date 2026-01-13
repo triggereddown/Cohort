@@ -7,7 +7,10 @@ import star from "../assets/star.webp";
 
 const Services = () => {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-8 border border-gray-500 m-8 rounded-3xl">
+    <div
+      id="services"
+      className="max-w-7xl mx-auto px-6 py-8 border border-gray-500 m-8 rounded-3xl"
+    >
       <div className="mb-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <h1 className="text-5xl font-medium tracking-tight">Our Services</h1>

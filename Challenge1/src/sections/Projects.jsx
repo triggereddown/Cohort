@@ -8,7 +8,7 @@ import placeholderImg4 from "../assets/img6.webp";
 
 const Projects = () => {
   return (
-    <div className="projects max-w-7xl mx-auto px-6 py-20 ">
+    <div id="projects" className="projects max-w-7xl mx-auto px-6 py-20 ">
       <div className="top flex flex-col md:flex-row justify-between items-end mb-20">
         <div className="left">
           <h1 className="text-5xl font-medium tracking-tight">

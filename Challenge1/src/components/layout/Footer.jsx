@@ -4,7 +4,7 @@ import star from "../../assets/star.webp";
 
 const Footer = () => {
   return (
-    <div className="px-6 pb-6">
+    <div id="footer" className=" px-6 pb-6">
       {" "}
       <footer className="border border-gray-200 px-8 py-12 mt-20 rounded-[2.5rem] text-center max-w-7xl mx-auto">
         {/* Top Tagline */}

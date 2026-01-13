@@ -42,8 +42,8 @@ const Hero = () => {
         />
       </div>
 
-      <div className="mt-12 flex items-center gap-4">
-        <Button className="rounded-full border-gray-300 px-8 py-4 text-xl">
+      <div className="mt-12 flex items-center gap-4 ">
+        <Button className="rounded-full border-gray-300 px-8 py-4 text-lg">
           Create Magic
         </Button>
 
