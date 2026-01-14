@@ -52,6 +52,18 @@ A React-based data fetching component showcasing reusable components,with using 
 <img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/04fd73ef-4b4e-4049-a92b-c9fa7ad2e2f9" />
 <img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/ed7c933e-ba4c-487e-82cd-d4d94b43dfd1" />
 
+## 📌 Project 10 — React Website with proper reusable components and context usecase 
+LiveLink-https://challenge1-topaz.vercel.app/
+### 📸 Screenshot
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/60148808-5dba-40e4-b8a9-9cc90238b5c6" />
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/a2976a5f-e002-4259-9ea9-8f2c0dadcadc" />
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/f66fe776-a287-47a3-8635-8504fbee2385" />
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/8455e3ca-9149-442a-8a93-6d536d9c5874" />
+
+
+
+
+
 
 
 
