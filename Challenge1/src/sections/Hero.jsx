@@ -6,20 +6,23 @@ import image2 from "../assets/img2.png";
 
 const Hero = () => {
   return (
-    <section className="relative pt-10 pb-20 px-6 max-w-7xl mx-auto flex flex-col items-center text-center">
-      <p className="text-gray-500 mb-6 text-lg font-medium">
+    <section className="relative pt-12 pb-20 px-4 md:px-6 max-w-7xl mx-auto flex flex-col items-center text-center">
+      <p className="text-gray-500 mb-6 text-base md:text-lg font-medium">
         Igniting the Spark of Inspiration
       </p>
 
-      <h1 className="text-6xl md:text-8xl font-medium tracking-tight leading-[1.1] z-10 relative">
+      <h1 className="text-5xl md:text-8xl font-medium tracking-tight leading-[1.1] z-10 relative">
         Unleash Your <br />
         Brand
-        <span className="inline-flex items-center justify-center align-middle mx-3 bg-gradient-to-tr from-orange-400 to-red-400 w-16 h-16 rounded-full">
-          <Sparkles className="text-white w-10 h-10" fill="currentColor" />
+        <span className="inline-flex items-center justify-center align-middle mx-2 md:mx-3 bg-gradient-to-tr from-orange-400 to-red-400 w-12 h-12 md:w-16 md:h-16 rounded-full">
+          <Sparkles
+            className="text-white w-6 h-6 md:w-10 md:h-10"
+            fill="currentColor"
+          />
         </span>
         with Our <br />
         <span className="relative inline-block mt-2">
-          <span className="bg-brand-yellow px-6 py-1 rounded-lg transform -rotate-2 inline-block text-brand-purple font-medium shadow-sm">
+          <span className="bg-brand-yellow px-4 py-1 md:px-6 md:py-1 rounded-lg transform -rotate-2 inline-block text-brand-purple font-medium shadow-sm">
             Magico
           </span>
         </span>{" "}
@@ -42,13 +45,13 @@ const Hero = () => {
         />
       </div>
 
-      <div className="mt-12 flex items-center gap-4 ">
-        <Button className="rounded-full border-gray-300 px-12 py-5 text-2xl">
+      <div className="mt-10 md:mt-12 flex items-center gap-4">
+        <Button className="rounded-full border-gray-300 px-8 py-3 text-lg md:px-12 md:py-5 md:text-2xl">
           Create Magic
         </Button>
 
-        <button className="bg-[#7F27FF] hover:bg-[#6b21d6] text-white w-14 h-14 rounded-full flex items-center justify-center transition-colors shadow-lg cursor-pointer">
-          <Sparkles size={28} fill="currentColor" />
+        <button className="bg-[#7F27FF] hover:bg-[#6b21d6] text-white w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-colors shadow-lg cursor-pointer">
+          <Sparkles size={24} className="md:w-7 md:h-7" fill="currentColor" />
         </button>
       </div>
 

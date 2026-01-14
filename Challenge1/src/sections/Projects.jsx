@@ -8,15 +8,18 @@ import placeholderImg4 from "../assets/img6.webp";
 
 const Projects = () => {
   return (
-    <div id="projects" className="projects max-w-7xl mx-auto px-6 py-20 ">
-      <div className="top flex flex-col md:flex-row justify-between items-end mb-20">
+    <div
+      id="projects"
+      className="projects max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-20"
+    >
+      <div className="top flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20">
         <div className="left">
-          <h1 className="text-5xl font-medium tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-medium tracking-tight">
             Recent Project
           </h1>
         </div>
 
-        <div className="right text-gray-500 max-w-md text-right">
+        <div className="right text-gray-500 max-w-md text-left md:text-right mt-4 md:mt-0">
           <p>
             Step into the world of our most recent projects, a showcase of our
             unwavering commitment to progressive design.
@@ -24,8 +27,9 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="bottom flex flex-col md:flex-row gap-8">
-        <div className="left flex-1 flex flex-col gap-16 ">
+      <div className="bottom flex flex-col md:flex-row gap-8 md:gap-12">
+        {/* Left Column */}
+        <div className="left flex-1 flex flex-col gap-10 md:gap-16">
           <ProjectCard
             title="The Lighthouse"
             description="Adding a new dimension to projects through thoughtfully designed 2D animations."
@@ -41,7 +45,9 @@ const Projects = () => {
           />
         </div>
 
-        <div className="right flex-1 flex flex-col gap-16 md:mt-32 pl-10">
+        {/* Right Column */}
+
+        <div className="right flex-1 flex flex-col gap-10 md:gap-16 md:mt-32 md:pl-10">
           <ProjectCard
             title="Snowscape Haven"
             description="Crafting a visual identity that mirrors the serenity and allure of a winter sanctuary."

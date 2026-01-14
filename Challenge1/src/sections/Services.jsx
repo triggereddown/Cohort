@@ -9,18 +9,21 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="max-w-7xl mx-auto px-6 py-8 border border-gray-500 m-8 rounded-3xl"
+      className="max-w-7xl mx-auto px-4 py-8 md:px-6 border border-gray-500 my-8 md:my-12 rounded-[2rem] md:rounded-3xl"
     >
-      <div className="mb-10">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
-          <h1 className="text-5xl font-medium tracking-tight">Our Services</h1>
-          <p className="text-gray-500 max-w-sm text-right mt-4 md:mt-0">
+      <div className="mb-16 md:mb-10">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-12">
+          <h1 className="text-4xl md:text-5xl font-medium tracking-tight">
+            Our Services
+          </h1>
+
+          <p className="text-gray-500 max-w-sm text-left md:text-right mt-4 md:mt-0 text-sm md:text-base">
             Discover a wide range of opportunities through a comprehensive range
             of qualified services.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           <ServiceCard
             title="Motion Graphics"
             description="Bring your ideas to life through dynamic visuals and engaging animations."
@@ -38,7 +41,7 @@ const Services = () => {
           />
         </div>
 
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mt-8 md:mt-0">
           <div className="flex gap-4">
             <button className="text-gray-400 hover:text-black transition">
               <ArrowLeft size={24} />
@@ -57,15 +60,16 @@ const Services = () => {
         </div>
       </div>
 
-      <div className=" text-center max-w-5xl mx-auto">
+      {/* About Section */}
+      <div className="text-center max-w-5xl mx-auto py-8 md:py-0">
         <div className="uppercase text-xs text-gray-400 tracking-widest mb-6">
           — About Astratto
         </div>
 
-        <h2 className="text-4xl md:text-6xl font-normal leading-tight text-gray-900">
+        <h2 className="text-3xl md:text-6xl font-normal leading-tight text-gray-900">
           <span>
             <img
-              className="w-16 h-auto inline-block align-middle mr-2"
+              className="w-10 md:w-16 h-auto inline-block align-middle mr-2"
               src={Arrow}
               alt="decoration"
             />
@@ -73,8 +77,12 @@ const Services = () => {
           Our <span className="text-gray-400">visionary</span>{" "}
           <span className="text-orange-500">artisans</span> collaborate{" "}
           <span className="text-purple-600">seamlessly</span> to craft{" "}
-          <span className="bg-purple-600 text-white rounded-full p-1 inline-flex items-center justify-center align-middle mx-1 w-10 h-10">
-            <img src={star} alt="sparkle" className="w-6 invert brightness-0" />
+          <span className="bg-purple-600 text-white rounded-full p-1 inline-flex items-center justify-center align-middle mx-1 w-8 h-8 md:w-10 md:h-10">
+            <img
+              src={star}
+              alt="sparkle"
+              className="w-4 md:w-6 invert brightness-0"
+            />
           </span>{" "}
           inspiring <span className="text-gray-400">experiences</span>,{" "}
           <span className="text-orange-500">leaving</span> lasting{" "}
@@ -82,7 +90,7 @@ const Services = () => {
           <span className="text-purple-600">brands</span> and spaces.{" "}
           <span>
             <img
-              className="w-12 inline-block align-bottom ml-2 rotate-12"
+              className="w-8 md:w-12 inline-block align-bottom ml-2 rotate-12"
               src={star}
               alt="star"
             />
